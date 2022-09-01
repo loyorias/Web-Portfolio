@@ -1,82 +1,194 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 :root {
-    --primary-color: #007af3;
+  --primary-color: #007af3;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins';
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+  z-index: 2;
+  overflow-y: hidden;
 }
 
 nav {
-    display: flex;
-    margin: 0;
-    height: 10%;
-    padding: 1em;
-    align-items: center;
-    justify-content: space-between;
-    background: var(--primary-color)
+  display: flex;
+  margin: 0;
+  height: 10%;
+  padding: 1em;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--primary-color);
+  -webkit-animation: moveDown 1s ease-in-out forwards;
+          animation: moveDown 1s ease-in-out forwards;
 }
 
 .logo {
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
-    font-size: 2.5em;
-    margin-left: 100px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: 2.5em;
+  margin-left: 100px;
+}
+
+.logo:hover {
+  color: azure;
 }
 
 span {
-    cursor: pointer;
-    color: azure
+  color: azure;
+}
+
+span:hover {
+  color: #000;
 }
 
 nav ul li {
-    display: inline-block;
-    list-style: none;
-    margin: 10px 50px;
-    font-size: 1.5em;
+  display: inline-block;
+  list-style: none;
+  margin: 10px 50px;
+  font-size: 1.5em;
 }
 
 ul.leftnav a {
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
 }
 
 nav ul li a:hover {
-    color: azure;
+  color: azure;
 }
 
 .detel {
-    margin-left: 10%;
-    margin-top: 15%;
+  margin-left: 10%;
+  margin-top: 15%;
 }
+
 .detel h1 {
-    font-size: 50px;
-    color: #17170a;
+  font-size: 50px;
+  color: #17170a;
+  -webkit-animation: moveRight 1.5s ease-in-out forwards;
+          animation: moveRight 1.5s ease-in-out forwards;
 }
 
 span.surename {
-    color: var(--primary-color);
+  color: var(--primary-color);
+  -webkit-animation: moveRight 1.5s ease-in-out forwards;
+          animation: moveRight 1.5s ease-in-out forwards;
 }
 
 .detel p {
-    color: #000;
-    line-height: 30px;
+  color: #000;
+  line-height: 30px;
+  -webkit-animation: moveRight 1.5s ease-in-out forwards;
+          animation: moveRight 1.5s ease-in-out forwards;
 }
 
 .detel a {
-    color: rgb(218, 218, 218);
-    text-decoration: none;
-    display: block;
-    padding: 10px 20px;
-    font-size: 1.3em;
-    background: #212121;
-    margin: 30px 0;
-    border-radius: 8px;
-    display: inline-block;
-
+  color: rgb(218, 218, 218);
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+  font-size: 1.3em;
+  background: #212121;
+  margin: 30px 0;
+  border-radius: 8px;
+  display: inline-block;
+  -webkit-animation: moveRight 1.5s ease-in-out forwards;
+          animation: moveRight 1.5s ease-in-out forwards;
 }
+
+.hero {
+  position: relative;
+  width: 100%;
+  background-color: rgb(245, 245, 245);
+  height: 100vh;
+  -webkit-animation: moveDown 1s ease-in-out forwards;
+          animation: moveDown 1s ease-in-out forwards;
+}
+
+@-webkit-keyframes moveDown {
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveDown {
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.image {
+  width: 45%;
+  height: 80%;
+  position: absolute;
+  bottom: 1;
+  right: 100px;
+  top: 30%;
+  -webkit-animation: introLoad 2s forwards;
+          animation: introLoad 2s forwards;
+}
+
+.image img {
+  height: 96%;
+  position: absolute;
+  left: -2%;
+  bottom: 119px;
+  -webkit-animation: introLoad 1s forwards;
+          animation: introLoad 1s forwards;
+}
+
+.image2 img {
+  height: 86%;
+  position: absolute;
+  left: 51%;
+  bottom: 0;
+  transform: translateX(4%);
+  -webkit-animation: introLoad 2s forwards;
+          animation: introLoad 2s forwards;
+}
+
+@-webkit-keyframes introLoad {
+  from {
+    -webkit-clip-path: polygon(49% 68%, 50% 71%, 43% 52%, 43% 52%);
+            clip-path: polygon(49% 68%, 50% 71%, 43% 52%, 43% 52%);
+  }
+  to {
+    -webkit-clip-path: polygon(-100% 0%, 100% -100%, 100% 100%, 0% 100%);
+            clip-path: polygon(-100% 0%, 100% -100%, 100% 100%, 0% 100%);
+  }
+}
+
+@keyframes introLoad {
+  from {
+    -webkit-clip-path: polygon(49% 68%, 50% 71%, 43% 52%, 43% 52%);
+            clip-path: polygon(49% 68%, 50% 71%, 43% 52%, 43% 52%);
+  }
+  to {
+    -webkit-clip-path: polygon(-100% 0%, 100% -100%, 100% 100%, 0% 100%);
+            clip-path: polygon(-100% 0%, 100% -100%, 100% 100%, 0% 100%);
+  }
+}
+@-webkit-keyframes moveRight {
+  from {
+    transform: translateX(-100px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes moveRight {
+  from {
+    transform: translateX(-100px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}/*# sourceMappingURL=style.css.map */
