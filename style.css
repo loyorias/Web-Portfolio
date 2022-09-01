@@ -49,3 +49,34 @@ ul.leftnav a {
 nav ul li a:hover {
     color: azure;
 }
+
+.detel {
+    margin-left: 10%;
+    margin-top: 15%;
+}
+.detel h1 {
+    font-size: 50px;
+    color: #17170a;
+}
+
+span.surename {
+    color: var(--primary-color);
+}
+
+.detel p {
+    color: #000;
+    line-height: 30px;
+}
+
+.detel a {
+    color: rgb(218, 218, 218);
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    font-size: 1.3em;
+    background: #212121;
+    margin: 30px 0;
+    border-radius: 8px;
+    display: inline-block;
+
+}
