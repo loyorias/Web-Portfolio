@@ -99,6 +99,10 @@ span.surename {
           animation: moveRight 1.5s ease-in-out forwards;
 }
 
+.detel a:hover {
+  background: var(--primary-color);
+}
+
 .hero {
   position: relative;
   width: 100%;
@@ -155,6 +159,23 @@ span.surename {
           animation: introLoad 2s forwards;
 }
 
+.social-links {
+  margin-left: 9.8%;
+  margin-top: 19px;
+  -webkit-animation: introLoad 2s forwards;
+          animation: introLoad 2s forwards;
+}
+
+.social-links a {
+  font-size: 60px;
+  color: #212121;
+  margin-right: 20px;
+}
+
+.social-links a:hover {
+  color: var(--primary-color);
+}
+
 @-webkit-keyframes introLoad {
   from {
     -webkit-clip-path: polygon(49% 68%, 50% 71%, 43% 52%, 43% 52%);
@@ -191,4 +212,5 @@ span.surename {
   to {
     transform: translateY(0);
   }
+
 }/*# sourceMappingURL=style.css.map */
